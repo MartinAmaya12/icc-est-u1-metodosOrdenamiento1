@@ -6,17 +6,7 @@ public class App {
         System.out.println("Metodo ordenado");
 
 
-
-        //bubblesort(numeros);
-       // printArray(numeros);
-        //CREO LA CLASE SORTBUBBLE
-        //CREAR CALSE == INSTANCIAR LA CLASE
-
         SortBubble claseSortBubble = new SortBubble();
-        //claseSortBubble.printArray(numeros); //Imprime
-        //claseSortBubble.sortBubble(numeros); //ORDENA
-        //System.out.println("Ordenado");
-        //claseSortBubble.printArray(numeros);//Imprime
 
         claseSortBubble.sortAscendente(numeros);
         claseSortBubble.printArray(numeros);
@@ -28,9 +18,6 @@ public class App {
     public static void bubblesort(int[] numeros){
     int numerosSize = numeros.length;
     int preguntaCondicion = 0;
-    
-    //10,0,-5,5,15,2
-
 
     for(int i = 0; i < numerosSize; i++){
         for(int j = i+1; j<numerosSize; j++){

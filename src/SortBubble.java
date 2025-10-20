@@ -1,6 +1,6 @@
 public class SortBubble {
     
-    //CONSTRUCTOR
+
     public SortBubble(){
 System.out.println("Se creo mi clase SortBubble");        
     }
@@ -9,7 +9,6 @@ public void sortBubble(int[] numeros){
     int numerosSize = numeros.length;
     int preguntaCondiction = 0;
     int numeroCambios = 0;
-    //10,0,-5,5,15,2
 
     for(int i = 0; i < numerosSize; i++){
         for(int j = i+1; j<numerosSize; j++){
@@ -35,10 +34,9 @@ public void sortBubble(int[] numeros){
         int contPreguntas = 0;
 
         for (int i = 0; i < numeros.length - 1; i++) {
-            boolean hayCambio = false; //tecnica swapped
+            boolean hayCambio = false; 
             for (int j = 0; j < numeros.length - 1 - i; j++) {
                 contPreguntas++;
-                //El bubble sort normal if(numeros[i]>numeros[j+1])
                 if(numeros[j]>numeros[j+1]){
                     int temp = numeros[j];
                     numeros[j] = numeros[j+1];
@@ -61,10 +59,9 @@ public void sortBubble(int[] numeros){
         int contPreguntas = 0;
 
         for (int i = 0; i < numeros.length - 1; i++) {
-            boolean hayCambio = false; //tecnica swapped
+            boolean hayCambio = false;
             for (int j = 0; j < numeros.length - 1 - i; j++) {
                 contPreguntas++;
-                //El bubble sort normal if(numeros[i]>numeros[j+1])
                 if(numeros[j]>numeros[j+1]){
                     int temp = numeros[j];
                     numeros[j] = numeros[j+1];
