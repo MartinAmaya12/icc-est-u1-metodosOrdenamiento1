@@ -2,48 +2,40 @@ public class App {
     public static void main(String[] args) throws Exception {
         //tipoVariable nombreVariable = valorVariable;
         int[]numeros = {10,0,-5,5,15,2};
-        printArray(numeros);
-        System.out.println("Metodo ordenado");
+        //printArray(numeros); //Imprimo
 
-
-        SortBubble claseSortBubble = new SortBubble();
-
-        claseSortBubble.sortAscendente(numeros);
-        claseSortBubble.printArray(numeros);
-
-        claseSortBubble.sortDescendente(numeros);
-        claseSortBubble.printArray(numeros);
-    }
+        System.out.println("Estudiante: Martin Amaya");
+        System.out.println("Metodo Ordenado");
         
-    public static void bubblesort(int[] numeros){
-    int numerosSize = numeros.length;
-    int preguntaCondicion = 0;
+        
+        
+        //bubblesort(numeros);
+        //printArray(numeros);
+        //CREO LA CLASE SORTBUBBLE
+        //CREAR LA CLASE == INSTANCIAR LA CLASE
+        //SortBubble claseSortBubble = new SortBubble();
+        //claseSortBubble.printArray(numeros); //Imprime
+        //claseSortBubble.sortBubble(numeros); //ORDENA
+        //System.out.println("Ordenado");
+        //claseSortBubble.printArray(numeros);//Imprime
 
-    for(int i = 0; i < numerosSize; i++){
-        for(int j = i+1; j<numerosSize; j++){
-            preguntaCondicion++;
-            System.out.println("Pregunto" + preguntaCondicion);
-            if(numeros[i]>numeros[j]){
-                int temp = numeros[j];
-                numeros[j]=numeros[i];
-                numeros[i] = temp;
-            }
-        }
-    }
-    }
+        //claseSortBubble.sortBubbleAvzAscendente(numeros);
+        //claseSortBubble.printArray(numeros); //Imprime
 
-   public static void printArray(int[] numeros){
-        System.out.println("[");
-        for (int i = 0; i < numeros.length; i++) {
+        //claseSortBubble.sortBubbleAvzDescendente(numeros);
+        //claseSortBubble.printArray(numeros);
 
-            if (i == numeros.length - 1) {
-                System.out.println(numeros[i]);
-            } else {
-                System.out.print(numeros[i]+ ", ");
-            }
-            
-            
-        }
-        System.out.println("]");
-    }
+        //Selection
+        SortSelection claseSortSelection = new SortSelection();
+        System.out.println("Metodo Seleccion");
+        System.out.println("Original");
+        claseSortSelection.printArray(numeros);
+        claseSortSelection.SortAscendente(numeros);
+        System.out.println("Ordenado Ascendente: ");
+        claseSortSelection.printArray(numeros);
+        System.out.println("Ordenado Descendente: ");
+        claseSortSelection.SortDescendente(numeros);
+        claseSortSelection.printArray(numeros);
+    }    
 }
+

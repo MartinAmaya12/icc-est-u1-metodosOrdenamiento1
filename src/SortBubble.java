@@ -1,9 +1,9 @@
 public class SortBubble {
     
 
-    public SortBubble(){
-System.out.println("Se creo mi clase SortBubble");        
-    }
+public SortBubble(){
+    System.out.println("Se creo mi clase SortBubble");        
+}
 
 public void sortBubble(int[] numeros){
     int numerosSize = numeros.length;
@@ -28,29 +28,29 @@ public void sortBubble(int[] numeros){
         
     }
     
-    public void sortAscendente(int numeros[]){
+public void sortAscendente(int numeros[]){
 
-        int contCambios = 0;
-        int contPreguntas = 0;
+    int contCambios = 0;
+    int contPreguntas = 0;
 
-        for (int i = 0; i < numeros.length - 1; i++) {
-            boolean hayCambio = false; 
-            for (int j = 0; j < numeros.length - 1 - i; j++) {
-                contPreguntas++;
-                if(numeros[j]>numeros[j+1]){
-                    int temp = numeros[j];
-                    numeros[j] = numeros[j+1];
-                    numeros[j+1] = temp;
-                    contCambios++;
-                    hayCambio = true;
-                }
-            }
-            if(!hayCambio){
-                break;
+    for (int i = 0; i < numeros.length - 1; i++) {
+        boolean hayCambio = false; 
+        for (int j = 0; j < numeros.length - 1 - i; j++) {
+            contPreguntas++;
+            if(numeros[j]>numeros[j+1]){
+                int temp = numeros[j];
+                numeros[j] = numeros[j+1];
+                numeros[j+1] = temp;
+                contCambios++;
+                hayCambio = true;
             }
         }
-        System.out.println("Preguntas= " + contPreguntas);
-        System.out.println("Cambios= " + contCambios);
+        if(!hayCambio){
+            break;
+        }
+    }
+    System.out.println("Preguntas= " + contPreguntas);
+    System.out.println("Cambios= " + contCambios);
     }
     
     public void sortDescendente(int numeros[]){
@@ -91,6 +91,6 @@ public void sortBubble(int[] numeros){
             
         }
         System.out.println("]");
-    }   
+    }
     
 }
