@@ -14,6 +14,22 @@ Metodo Sort Selection en Java y Python
 # Salida de java
 ![alt text](assets/SortSelectionJava.png)
 
-# Slaida de Python
+# Salida de Python
 ![alt text](assets/SortSelectionPy.png)
+
+### Practica 3 - 23/OCT
+Metodo Sort Insertion en Java
+
+# Salida en Java
+## Arreglo Numeros enteros
+![alt text](assets/SortInsertion1.png)
+
+## Arreglo de Cadena
+![alt text](assets/SortInsertion2.png)
+
+## Arreglo ordenado por nombres
+![alt text](assets/SortInsertion3.png)
+
+## Arreglo ordenado por edades
+![alt text](assets/SortInsertion4.png)
 
